@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "967504234042",
+    "firebase_url": "https://social-app-20b7a.firebaseio.com",
+    "project_id": "social-app-20b7a",
+    "storage_bucket": "social-app-20b7a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:967504234042:android:ab3ec2ff8c13743530d703",
+        "android_client_info": {
+          "package_name": "com.nust.socialapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "967504234042-o7me1clcogiabqpnr2fsae7hj5tlavf2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nust.socialapp",
+            "certificate_hash": "b8951e04d8f201f2faedc3a5fa21157f3275e943"
+          }
+        },
+        {
+          "client_id": "967504234042-hsc004sms1vggiri4m0371uput8iioo3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8u19_XVQGf3t3zEg7pL2skxT2zgaH6ks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "967504234042-hsc004sms1vggiri4m0371uput8iioo3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
