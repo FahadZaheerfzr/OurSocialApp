@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nust.socialapp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission
+        android:name="android.permission.AUTHENTICATE_ACCOUNTS"
+        android:maxSdkVersion="22" />
+
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS"
+        android:maxSdkVersion="22" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission
+        android:name="android.permission.AUTHENTICATE_ACCOUNTS"
+        android:maxSdkVersion="22" />
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS"
+        android:maxSdkVersion="22" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".create_event"></activity>
+        <activity android:name=".evet_page" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".linphone.VoipActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppCompat.NoActionBar"/>
+
+        <activity android:name=".linphone.activities.LinphoneLauncherActivity" />
+
+        <service
+            android:name=".linphone.service.LinphoneService"
+            android:label="Call Service" />
+
+        <activity android:name=".linphone.activities.MainActivity" />
+        <activity android:name=".linphone.assistant.MenuAssistantActivity" />
+        <activity android:name=".linphone.assistant.AccountConnectionAssistantActivity" />
+        <activity android:name=".linphone.assistant.EmailAccountCreationAssistantActivity" />
+        <activity android:name=".linphone.assistant.EmailAccountValidationAssistantActivity" />
+        <activity android:name=".linphone.assistant.PhoneAccountCreationAssistantActivity" />
+        <activity android:name=".linphone.assistant.PhoneAccountValidationAssistantActivity" />
+        <activity android:name=".linphone.assistant.PhoneAccountLinkingAssistantActivity" />
+        <activity android:name=".linphone.assistant.GenericConnectionAssistantActivity" />
+        <activity android:name=".linphone.assistant.QrCodeConfigurationAssistantActivity" />
+        <activity android:name=".linphone.assistant.RemoteConfigurationAssistantActivity" />
+        <activity android:name=".linphone.assistant.EchoCancellerCalibrationAssistantActivity" />
+
+        <receiver
+            android:name=".linphone.notifications.NotificationBroadcastReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".linphone.call.CallIncomingActivity"
+            android:launchMode="singleTop"
+            android:noHistory="true"
+            android:showWhenLocked="true"
+            android:turnScreenOn="true"
+            android:theme="@style/AppCompat.NoActionBar"/>
+        <activity android:name=".linphone.RingerActivity" />
+        <activity
+            android:name=".linphone.call.CallActivity"
+            android:launchMode="singleTop"
+            android:showWhenLocked="true"
+            android:supportsPictureInPicture="true"
+            android:theme="@style/AppCompat.NoActionBar"/>
+        <activity
+            android:name=".linphone.CallInterfaceActivity"
+            android:launchMode="singleTop"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:showWhenLocked="true"
+            android:turnScreenOn="true"
+            android:theme="@style/AppCompat.NoActionBar"/>
+        <activity
+            android:name=".main.main.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.postDetails.PostDetailsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/label_post_detail_activity" />
+        <activity
+            android:name=".main.post.createPost.CreatePostActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/label_create_post_activity" />
+        <activity
+            android:name=".main.imageDetail.ImageDetailActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/label_image_detail_activity"
+            android:theme="@style/AppCompat.Black.NoActionBar" />
+        <activity
+            android:name=".main.login.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppCompat.NoActionBar" />
+        <activity
+            android:name=".main.editProfile.createProfile.CreateProfileActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_create_profile" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".main.profile.ProfileActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/AppCompat.NoActionBar" />
+        <activity
+            android:name=".main.editProfile.EditProfileActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_edit_profile" />
+        <activity
+            android:name=".main.post.editPost.EditPostActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_edit_post" />
+        <activity
+            android:name=".main.usersList.UsersListActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppCompat.NoActionBar" />
+        <activity
+            android:name=".main.followPosts.FollowingPostsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_following_posts"
+            android:theme="@style/AppCompat.NoActionBar" />
+        <activity
+            android:name=".main.search.SearchActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppCompat.NoActionBar"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="84e05e27c9fcba7e1de6a47e355a1aa247264a46" />
+
+        <service android:name=".services.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".services.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

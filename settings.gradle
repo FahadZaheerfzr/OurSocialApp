@@ -1,0 +1,2 @@
+include ':linphone-sdk-android-4.2'
+include ':app'

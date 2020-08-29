@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="storage_link">gs://social-app-20b7a.appspot.com</string>
+    <string name="google_web_client_id">967504234042-hsc004sms1vggiri4m0371uput8iioo3.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">415080662213842</string>
+    <string name="facebook_large_image_url_pattern">https://graph.facebook.com/%1$s/picture?type=large</string>
+    <string name="google_large_image_url_pattern">%1$s?sz=%2$d</string>
+</resources>

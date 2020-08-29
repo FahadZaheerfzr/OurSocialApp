@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/call"
+        android:icon="@drawable/call"
+        android:title="Call"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/followingPosts"
+        android:icon="@drawable/ic_following_posts"
+        android:title="@string/following_post_menu_item"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/EventPosts"
+        android:icon="@drawable/managerevents"
+        android:title="@string/event_post_menu_item"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_person"
+        android:title="@string/profile_menu_item"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search_menu_item"
+        app:showAsAction="always" />
+
+
+</menu>
+
